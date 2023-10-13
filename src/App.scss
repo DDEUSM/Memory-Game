@@ -167,7 +167,7 @@
         align-items: center;
         padding: 20px 0px;
         box-sizing: border-box;            
-        flex: 1 1 70%;        
+        flex: 1 0 70%;        
         height: calc(100vh - 20px);
         background: linear-gradient(210.19deg, rgba(217, 217, 217, 0) 18.39%, rgba(154, 154, 154, 0) 62.95%, rgba(63, 63, 63, 0.12) 88.89%);
         border: 3px solid rgba(200, 195, 195, 0.35);
@@ -181,9 +181,16 @@
         box-sizing: border-box;    
         display: flex;
         flex-wrap: wrap;                
-        gap: 50px;
+        gap: 30px;
         justify-content: center;
         align-items: center;
+
+        @media (min-width: 2000px) {
+            
+            display: flex;
+            gap: 50px;
+            
+        }
     }
 }
 
@@ -216,14 +223,27 @@
     height: 250px;
     width: 250px;    
     transition: all ease-in .1s;
-    border: 1px solid white;
+    border: 1px solid white;    
     .card-back{
         font-size: 6em;
         font-weight: 700;
         color: rgba(0, 0, 0, 0.33);
     }
+    @media (max-width: 1610px) {
+    
+        height: 200px;
+        width: 200px;    
+     
 }
+
+}
+
+
+
 .selected {
     background-color: rgba(16, 61, 219, 0.99);
 }
+
+
+
 
